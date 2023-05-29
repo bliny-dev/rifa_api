@@ -15,7 +15,7 @@ class PrizeDraw(models.Model):
     image_sorteio = models.ImageField(upload_to="rifa_img/") 
 
     def __str__(self):
-        return self.name 
+        return str(self.id)
 
     class Meta:
         verbose_name = 'Sorteio'

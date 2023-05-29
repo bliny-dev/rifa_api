@@ -10,6 +10,9 @@ class User(AbstractUser):
     full_name = models.CharField('Nome completo', max_length=150)
     email = models.EmailField('Email', max_length=150)
 
+def __str__(self):
+    return str(self.id)
+
 class Meta:
         verbose_name = 'Usuário'
         verbose_name_plural = 'Usuários'
