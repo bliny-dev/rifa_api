@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('awards/', include('awards.urls', namespace='awards')),
     path('prizedraw/', include('prize_draw.urls', namespace='prizedraw')),
+    path('accounts/', include('accounts.urls', namespace='accounts')),
 ]
